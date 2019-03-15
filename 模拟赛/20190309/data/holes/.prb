@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problem type="TRA_0_4" version="1.1.0" maker="ccr-plus">
+    <source code="100" dir="holes" file="holes">
+        <language cmd="gcc -o holes holes.c -lm -static" time="10" file="holes.c"/>
+        <language cmd="g++ -o holes holes.cpp -lm -static" time="10" file="holes.cpp"/>
+        <language cmd="fpc holes.pas" time="10" file="holes.pas"/>
+    </source>
+    <task time="10" checker="fulltext" output="holes.out" input="holes.in">
+        <subtask score="10">
+            <point time="1" out="holes (0).out" in="holes (0).in" mem="256"/>
+        </subtask>
+        <subtask score="10">
+            <point time="1" out="holes (1).out" in="holes (1).in" mem="256"/>
+        </subtask>
+        <subtask score="10">
+            <point time="1" out="holes (2).out" in="holes (2).in" mem="256"/>
+        </subtask>
+        <subtask score="10">
+            <point time="1" out="holes (3).out" in="holes (3).in" mem="256"/>
+        </subtask>
+        <subtask score="10">
+            <point time="1" out="holes (4).out" in="holes (4).in" mem="256"/>
+        </subtask>
+        <subtask score="10">
+            <point time="1" out="holes (5).out" in="holes (5).in" mem="256"/>
+        </subtask>
+        <subtask score="10">
+            <point time="1" out="holes (6).out" in="holes (6).in" mem="256"/>
+        </subtask>
+        <subtask score="10">
+            <point time="1" out="holes (7).out" in="holes (7).in" mem="256"/>
+        </subtask>
+        <subtask score="10">
+            <point time="1" out="holes (8).out" in="holes (8).in" mem="256"/>
+        </subtask>
+        <subtask score="10">
+            <point time="1" out="holes (9).out" in="holes (9).in" mem="256"/>
+        </subtask>
+    </task>
+</problem>

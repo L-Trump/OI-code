@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problem type="TRA_0_4" version="1.1.0" maker="ccr-plus">
+    <source code="100" dir="robot" file="robot">
+        <language cmd="gcc -o robot robot.c -lm -static" time="10" file="robot.c"/>
+        <language cmd="g++ -o robot robot.cpp -lm -static" time="10" file="robot.cpp"/>
+        <language cmd="fpc robot.pas" time="10" file="robot.pas"/>
+    </source>
+    <task time="10" checker="fulltext" output="robot.out" input="robot.in">
+        <subtask score="5">
+            <point time="1" out="robot1.out" in="robot1.in" mem="256"/>
+        </subtask>
+        <subtask score="5">
+            <point time="1" out="robot2.out" in="robot2.in" mem="256"/>
+        </subtask>
+        <subtask score="5">
+            <point time="1" out="robot3.out" in="robot3.in" mem="256"/>
+        </subtask>
+        <subtask score="5">
+            <point time="1" out="robot4.out" in="robot4.in" mem="256"/>
+        </subtask>
+        <subtask score="5">
+            <point time="1" out="robot5.out" in="robot5.in" mem="256"/>
+        </subtask>
+        <subtask score="5">
+            <point time="1" out="robot6.out" in="robot6.in" mem="256"/>
+        </subtask>
+        <subtask score="5">
+            <point time="1" out="robot7.out" in="robot7.in" mem="256"/>
+        </subtask>
+        <subtask score="5">
+            <point time="1" out="robot8.out" in="robot8.in" mem="256"/>
+        </subtask>
+        <subtask score="5">
+            <point time="1" out="robot9.out" in="robot9.in" mem="256"/>
+        </subtask>
+        <subtask score="5">
+            <point time="1" out="robot10.out" in="robot10.in" mem="256"/>
+        </subtask>
+        <subtask score="5">
+            <point time="1" out="robot11.out" in="robot11.in" mem="256"/>
+        </subtask>
+        <subtask score="5">
+            <point time="1" out="robot12.out" in="robot12.in" mem="256"/>
+        </subtask>
+        <subtask score="5">
+            <point time="1" out="robot13.out" in="robot13.in" mem="256"/>
+        </subtask>
+        <subtask score="5">
+            <point time="1" out="robot14.out" in="robot14.in" mem="256"/>
+        </subtask>
+        <subtask score="5">
+            <point time="1" out="robot15.out" in="robot15.in" mem="256"/>
+        </subtask>
+        <subtask score="5">
+            <point time="1" out="robot16.out" in="robot16.in" mem="256"/>
+        </subtask>
+        <subtask score="5">
+            <point time="1" out="robot17.out" in="robot17.in" mem="256"/>
+        </subtask>
+        <subtask score="5">
+            <point time="1" out="robot18.out" in="robot18.in" mem="256"/>
+        </subtask>
+        <subtask score="5">
+            <point time="1" out="robot19.out" in="robot19.in" mem="256"/>
+        </subtask>
+        <subtask score="5">
+            <point time="1" out="robot20.out" in="robot20.in" mem="256"/>
+        </subtask>
+    </task>
+</problem>
