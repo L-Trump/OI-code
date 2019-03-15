@@ -33,37 +33,25 @@ inline void createEdge(int a, int b, int s){
 
 void spfa(int root){
     queue<int> q;
-    rep(i,1,2*n+3) h[i].dis=1000000007;
     h[root].dis=0;
     bool isInQ[2*n+5]={};
     q.push(root);
     isInQ[root]=1;
     while(!q.empty()){
         root=q.front();q.pop();
-
-        //cerr<<"root is "<<root<<endl;
-        //cerr<<"has edges number "<<e[root].size()-1<<endl;
-
         isInQ[root]=0;
         rep(i,0,(int)e[root].size()-1){
             int to=e[root][i].to;
             int w=e[root][i].w;
-          //  cerr<<"has edge "<<to<<" "<<w<<endl;
-
-          //  cerr<<"old value is "<<h[to].dis<<endl;
             if(h[root].dis+w<h[to].dis){
                 h[to].dis=h[root].dis+w;
-            //    cerr<<"distance of "<<to<<" update to "<<h[to].dis<<endl;
                 if(!isInQ[to]){
                     q.push(to);
-              //      cerr<<to<<" has pushed to q"<<endl;
                     isInQ[to]=1;
                 }
             }
         }
-       // cerr<<endl;
     }
-    //return min(h[2*n-1].dis,h[2*n].dis);
 }
 int main(){
     std::ios::sync_with_stdio(false);
@@ -76,7 +64,6 @@ int main(){
     cin>>n>>m;
     rep(i,1,n)
         cin>>isBlack[i];
-        //h[2*NMAX-i].isBlack=h[i].isBlack;
     rep(i,1,n){
         cin>>h[2*i-1].w;
         h[2*i]=h[2*i-1];
