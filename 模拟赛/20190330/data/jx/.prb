@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problem maker="ccr-plus" type="TRA_0_4" version="1.1.0">
+    <source file="jx" code="100" dir="jx">
+        <language file="jx.c" time="10" cmd="gcc -o jx jx.c -lm -static"/>
+        <language file="jx.cpp" time="10" cmd="g++ -o jx jx.cpp -lm -static"/>
+        <language file="jx.pas" time="10" cmd="fpc jx.pas"/>
+    </source>
+    <task time="10" output="jx.out" input="jx.in" checker="fulltext">
+        <subtask score="10">
+            <point time="1" in="jx1.in" out="jx1.out" mem="256"/>
+        </subtask>
+        <subtask score="10">
+            <point time="1" in="jx2.in" out="jx2.out" mem="256"/>
+        </subtask>
+        <subtask score="10">
+            <point time="1" in="jx3.in" out="jx3.out" mem="256"/>
+        </subtask>
+        <subtask score="10">
+            <point time="1" in="jx4.in" out="jx4.out" mem="256"/>
+        </subtask>
+        <subtask score="10">
+            <point time="1" in="jx5.in" out="jx5.out" mem="256"/>
+        </subtask>
+        <subtask score="10">
+            <point time="1" in="jx6.in" out="jx6.out" mem="256"/>
+        </subtask>
+        <subtask score="10">
+            <point time="1" in="jx7.in" out="jx7.out" mem="256"/>
+        </subtask>
+        <subtask score="10">
+            <point time="1" in="jx8.in" out="jx8.out" mem="256"/>
+        </subtask>
+        <subtask score="10">
+            <point time="1" in="jx9.in" out="jx9.out" mem="256"/>
+        </subtask>
+        <subtask score="10">
+            <point time="1" in="jx10.in" out="jx10.out" mem="256"/>
+        </subtask>
+    </task>
+</problem>

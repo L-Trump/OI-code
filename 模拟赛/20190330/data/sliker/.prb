@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problem maker="ccr-plus" type="TRA_0_4" version="1.1.0">
+    <source file="sliker" code="100" dir="sliker">
+        <language file="sliker.c" time="10" cmd="gcc -o sliker sliker.c -lm -static"/>
+        <language file="sliker.cpp" time="10" cmd="g++ -o sliker sliker.cpp -lm -static"/>
+        <language file="sliker.pas" time="10" cmd="fpc sliker.pas "/>
+    </source>
+    <task time="10" output="sliker.out" input="sliker.in" checker="fulltext">
+        <subtask score="10">
+            <point time="1" in="slikar1.in" out="slikar1.out" mem="64"/>
+        </subtask>
+        <subtask score="10">
+            <point time="1" in="slikar2.in" out="slikar2.out" mem="64"/>
+        </subtask>
+        <subtask score="10">
+            <point time="1" in="slikar3.in" out="slikar3.out" mem="64"/>
+        </subtask>
+        <subtask score="10">
+            <point time="1" in="slikar4.in" out="slikar4.out" mem="64"/>
+        </subtask>
+        <subtask score="10">
+            <point time="1" in="slikar5.in" out="slikar5.out" mem="64"/>
+        </subtask>
+        <subtask score="10">
+            <point time="1" in="slikar6.in" out="slikar6.out" mem="64"/>
+        </subtask>
+        <subtask score="10">
+            <point time="1" in="slikar7.in" out="slikar7.out" mem="64"/>
+        </subtask>
+        <subtask score="10">
+            <point time="1" in="slikar8.in" out="slikar8.out" mem="64"/>
+        </subtask>
+        <subtask score="10">
+            <point time="1" in="slikar9.in" out="slikar9.out" mem="64"/>
+        </subtask>
+        <subtask score="10">
+            <point time="1" in="slikar10.in" out="slikar10.out" mem="64"/>
+        </subtask>
+    </task>
+</problem>
